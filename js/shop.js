@@ -75,7 +75,6 @@ var total = 0;
 console.log("hello");
 
 function buy(id) {
-  // addToCart(id);
 
   // 1. Loop for to the array products to get the item to add to cart
   // 2. Add found product to the cartList array
