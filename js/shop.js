@@ -79,14 +79,14 @@ function buy(id) {
   // 1. Loop for to the array products to get the item to add to cart
   // 2. Add found product to the cartList array
 
-  // for (i = 0; i < products.length; i++) {
-  //   if (products[i].id == id) {
-  //     console.log("buscar " + products[i].name + "en lista de productos");
-  //     cartList.push(products[i]);
-  //     break;
-  //   }
-  // }
-  // console.log(cartList);
+  for (i = 0; i < products.length; i++) {
+    if (products[i].id == id) {
+      console.log("buscar " + products[i].name + "en lista de productos");
+      cartList.push(products[i]);
+      break;
+    }
+  }
+  console.log(cartList);
 }
 
 // Exercise 2
@@ -211,8 +211,6 @@ function printCart() {
   var sumatotal = document.getElementById("total_price");
   sumatotal.innerHTML = total;
 }
-
-// ** Nivell II **
 
 // Exercise 7
 function addToCart(id) {
